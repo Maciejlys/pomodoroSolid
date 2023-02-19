@@ -9,7 +9,7 @@ interface OptionButtonProps {
 const OptionButton: Component<OptionButtonProps> = (props) => {
   return (
     <a
-      class="rounded-md sm:rounded-full flex-1 flex py-2 px-4 cursor-pointer justify-center items-center font-bold transition-colors ease-out duration-300"
+      class="rounded-md sm:rounded-full flex-1 flex py-2 px-4 cursor-pointer justify-center items-center font-bold transition-colors"
       classList={{
         "bg-red-400 text-slate-900": props.isActive,
         "text-gray-400 hover:text-white": !props.isActive,
