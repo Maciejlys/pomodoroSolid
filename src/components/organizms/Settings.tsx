@@ -34,9 +34,8 @@ const Content: Component<{}> = (props) => {
     <div class="grid px-8">
       <Section>
         <SectionTitle>time (minutes)</SectionTitle>
-        <SelectForm></SelectForm>
+        <SelectForm />
       </Section>
-      <Section> xd</Section>
     </div>
   );
 };

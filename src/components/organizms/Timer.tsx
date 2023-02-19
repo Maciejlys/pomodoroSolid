@@ -1,5 +1,4 @@
 import { Component, createEffect, createSignal, JSXElement } from "solid-js";
-import { Modes } from "~/models/modes.model";
 import { formatTimeLeft } from "~/utils/timeUtil";
 import {
   currentMode,
