@@ -2,6 +2,11 @@
 
 There is a button in the bottom left corner that sets all timers to 00:01 to allow testing
 
+# Todo
+
+- Fix animation on timer mount that is tweened and it is delayed by 1 second for some reason
+- Add more options in settings, color / font?
+
 # SolidStart
 
 Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
