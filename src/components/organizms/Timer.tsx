@@ -11,7 +11,7 @@ type TimerState = "Paused" | "Running";
 
 const OuterCircle: Component<{ children: JSXElement }> = (props) => (
   <div
-    class="aspect-square w-3/4 md:w-4/5 lg:w-2/5 rounded-full  flex justify-center items-center bg-gradient-to-tl from-[rgb(44,56,107)] to-[rgb(21,26,50)]"
+    class="aspect-square max-w-lg w-3/4 md:w-4/5 lg:w-2/5 rounded-full  flex justify-center items-center bg-gradient-to-tl from-[rgb(44,56,107)] to-[rgb(21,26,50)]"
     style={{ "box-shadow": "-50px -50px 100px rgba(66, 75, 125, 0.8)" }}
   >
     {props.children}
@@ -92,7 +92,7 @@ const Timer: Component<{}> = (props) => {
       <InnerCircle callback={handleTimer}>
         <TimerBar timeLeft={getPercentage()} />
         <div class="flex flex-col justify-center items-center">
-          <div class="text-xl sm:text-4xl md:text-6xl xl:text-8xl font-bold font-mono">
+          <div class="text-6xl sm:text-6xl lg:text-7xl 2xl:text-8xl font-bold font-mono">
             {formatTimeLeft(timer())}
           </div>
           <div
