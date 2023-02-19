@@ -1,15 +1,12 @@
-import { Component, createEffect, createSignal, For } from "solid-js";
-import { Title } from "solid-start";
+import { Component } from "solid-js";
 import SettingsButton from "../atoms/SettingsButton";
 import TitleText from "../atoms/TitleText";
-import { Modes } from "../../models/modes.model";
 import ButtonGroup from "../molecules/ButtonGroup";
 import Settings from "../organizms/Settings";
 import Timer from "../organizms/Timer";
 import PageContainer from "../templates/PageContainer";
-import { workCount } from "../store/settings";
+
 import WorkCounter from "../molecules/WorkCounter";
-import DebugButton from "../atoms/DebugButton";
 
 const HomePage: Component<{}> = (props) => {
   return (
@@ -20,7 +17,6 @@ const HomePage: Component<{}> = (props) => {
       <SettingsButton />
       <Settings />
       <WorkCounter />
-      <DebugButton />
     </PageContainer>
   );
 };

@@ -1,10 +1,4 @@
-import {
-  Component,
-  For,
-  onMount,
-  startTransition,
-  useTransition,
-} from "solid-js";
+import { Component, For } from "solid-js";
 import WorkDot from "../atoms/WorkDot";
 import { workCount } from "../store/settings";
 

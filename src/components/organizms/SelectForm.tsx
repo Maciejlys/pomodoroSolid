@@ -1,4 +1,4 @@
-import { Component, createSignal, For } from "solid-js";
+import { Component } from "solid-js";
 import { generateNumbers } from "~/utils/timeUtil";
 import SelectValue from "../molecules/SelectValue";
 import {

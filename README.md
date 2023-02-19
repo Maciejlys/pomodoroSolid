@@ -1,7 +1,3 @@
-# Testing
-
-There is a button in the bottom left corner that sets all timers to 00:01 to allow testing
-
 # Todo
 
 - Fix animation on timer mount that is tweened and it is delayed by 1 second for some reason

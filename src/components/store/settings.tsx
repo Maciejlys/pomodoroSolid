@@ -1,6 +1,5 @@
-import { createEffect, createSignal } from "solid-js";
+import { createSignal } from "solid-js";
 import { Modes } from "~/models/modes.model";
-import { LengthOptions } from "~/models/settings.model";
 
 // Modal state
 export const [settingsOpened, setsettingsOpened] = createSignal(false);

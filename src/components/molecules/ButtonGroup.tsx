@@ -1,4 +1,4 @@
-import { Component, createSignal, For, JSX } from "solid-js";
+import { Component, createSignal, For } from "solid-js";
 import OptionButton from "../atoms/OptionButton";
 import { Modes } from "../../models/modes.model";
 import { currentMode, setcurrentMode } from "../store/settings";
