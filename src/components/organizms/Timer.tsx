@@ -1,4 +1,5 @@
 import { Component, createEffect, createSignal, JSXElement } from "solid-js";
+import createTween from "~/utils/createTween";
 import { formatTimeLeft } from "~/utils/timeUtil";
 import {
   currentMode,
@@ -87,10 +88,14 @@ const Timer: Component<{}> = (props) => {
   const getPercentage = () =>
     (timer() / (getSpecificSetting(currentMode()) * 60)) * 283;
 
+  const tweenedValue = createTween(getPercentage, {
+    duration: getSpecificSetting(currentMode()) * 60,
+  });
+
   return (
     <OuterCircle>
       <InnerCircle callback={handleTimer}>
-        <TimerBar timeLeft={getPercentage()} />
+        <TimerBar timeLeft={tweenedValue()} />
         <div class="flex flex-col justify-center items-center">
           <div class="text-6xl sm:text-6xl lg:text-7xl 2xl:text-8xl font-bold font-mono">
             {formatTimeLeft(timer())}
@@ -100,7 +105,7 @@ const Timer: Component<{}> = (props) => {
               timerState() == "Paused" ? "animate-pulse" : ""
             } transition-all`}
           >
-            {timerState()}
+            {timerState() == "Paused" ? "Start" : "Pause"}
           </div>
         </div>
       </InnerCircle>
